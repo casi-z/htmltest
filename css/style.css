@@ -60,19 +60,6 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 /*ПЕРЕМЕННЫЕ ЦВЕТА*/
 /*--------------------*/
-.right {
-  color: red !important; }
-  .right h1 {
-    color: red !important; }
-  .right h2 {
-    color: red !important; }
-  .right h3 {
-    color: red !important; }
-  .right h4 {
-    color: red !important; }
-  .right h5 {
-    color: red !important; }
-
 html body {
   overflow: hidden;
   -webkit-transition-duration: 1s;
