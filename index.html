@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML test</title>
+    <link class="link" rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+   
+</head>
+   
+<body class="">
+
+    <svg class="close" xmlns="http://www.w3.org/2000/svg" width="256" height="256" fill="white" class="bi bi-x-circle" viewBox="0 0 128 128">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+    </svg>
+    
+    <div class="points-container">
+            <div class="points-container__progress-bar">
+                <div class="points-container__progress-bar-item"></div>
+            </div>
+            <div class="points-container__points">0
+                <div class="points-container__point points-container__point_green-point">+1</div>
+                <div class="points-container__point points-container__point_red-point">0</div>
+            </div> 
+    </div> 
+    <div class="header">
+        <span class="header__part"></span>
+        <div class="header__end-button">ЗАВЕРШИТЬ ТЕСТ</div>
+        <div class="header__timer"><div class="header__minutes"></div>:<div class="header__seconds"></div></div>
+        <div class="header__theme-button">
+            <i class="bi bi-lightbulb"></i>
+        </div>
+    </div>   
+    
+    <div class="test">
+        <div class="test__body"> 
+            <!-- !Стартовый экран -->
+            <div class="start-screen">
+                <div class="start-screen__content">
+                    <h2>Тест по</h2>
+                    <div class="start-screen__logo-container">
+                        <div class="start-screen__logo-symbol start-screen__logo-symbol_h">H</div>
+                        <div class="start-screen__logo-symbol start-screen__logo-symbol_t">T</div>
+                        <div class="start-screen__logo-symbol start-screen__logo-symbol_m">M</div>
+                        <div class="start-screen__logo-symbol start-screen__logo-symbol_l">L</div>
+                    </div>
+                    <div class="start-screen__test-info">
+                        <span class="start-screen__test-time">НА ТЕСТ ДАЁТСЯ    <h2>X</h2>   МИНУТ</span>
+                        <span class="start-screen__test-question-length">ТЕСТ СОДЕРЖИТ <H2>N</H2> ВОПРОСОВ</span>
+                    </div> 
+                </div>
+                <div class="start-screen__button-container">
+                    <div class="start start-screen__button">СТАРТ</div>
+                    
+                </div>       
+            </div>
+            <!-- !Вопрос 1  -->
+            <div class="test-question">
+                <div class="container test-question__container test-question__container_task-cont">
+                    <span>В каком теге записаны теги, <h2>влияющие на весь сайт?</h2></span>
+                    
+                </div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong button add-hover"><h2><</h2><h3>header</h3><h2>></h2></div>
+                    <div class="right button add-hover"><h2><</h2> <h3>head</h3><h2>></h2></div>
+                    <div class="wrong button add-hover"><h2><</h2> <h3>footer</h3><h2>></h2></div>
+                    <div class="wrong button add-hover"><h2><h2><</h2> <h3>link</h3><h2>></h2></h2></div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div>
+            </div>        
+            <!-- !Вопрос 2 -->
+            <div class="test-question">
+                <div class="container test-question__container test-question__container_task-cont">
+                    <span>Какой тег отвечает за <h2>название вкладки?</h2></span>
+                </div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong button add-hover"><h2><h2><</h2><h3>word</h3><h2>></h2></h2></div>
+                    <div class="wrong button add-hover"><h2><h2><</h2><h3>browser-name</h3><h2>></h2></h2></div>
+                    <div class="wrong button add-hover"><h2><h2><</h2><h3>name</h3><h2>></h2></h2></div>
+                    <div class="right button add-hover"><h2><h2><</h2><h3>title</h3><h2>></h2></h2></div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div>
+            </div>        
+            <!-- !Вопрос 3 -->
+            <div class="test-question">
+                <div class="container test-question__container test-question__container_task-cont">
+                    <span>Какой тег отвечает за отображение сайта <h2>на разных устройствах?</h2></span>
+                </div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong button add-hover"><h2><</h2><h3>meta name = "device"</h3><h2>></h2></div>
+                    <div class="right button add-hover"><h2><</h2><h3>meta name = "viewport"</h3><h2>></h2></div>
+                    <div class="wrong button add-hover"><h2><</h2><h3>viewport</h3><h2>></h2></h2></div>
+                    <div class="wrong button add-hover"><h2><</h2><h3>device</h3><h2>></h2></div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div>
+            </div>    
+             <!--!Вопрос 4 -->
+            <div class="test-question">
+                <div class="container test-question__container test-question__container_task-cont">
+                    <span>Какой тег <h2>НЕ является блочным</h2></span>
+                </div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="right add-hover button"><h2><</h2><h3>h3</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>a</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>audio</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>button</h3><h2>></h2></div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>    
+            <!-- !Вопрос 5 -->
+            <div class="test-question">
+                <div class="container test-question__container test-question__container_task-cont">
+                    <span><marquee behavior="" direction="">Как сделать бегущую строку?</marquee></span>
+                </div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button"><h2><</h2><h3>span type = run</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>queue</h3><h2>></h2></div>
+                    <div class="right add-hover button"><h2><</h2><h3>marquee</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>string type = "run"</h3><h2>></h2></div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div> 
+            <!-- !Вопрос 6 -->
+            <div class="test-question">
+                <div class="container test-question__container test-question__container_task-cont">
+                    <span>Как сделать <br><br><h2>отступ?</h2></span>
+                </div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button"><h2><</h2><h3>p</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>b</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>base</h3><h2>></h2></div>
+                    <div class="right add-hover button"><h2><</h2><h3>br</h3><h2>></h2></div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>   
+            <!-- !Вопрос 7 -->
+            <div class="test-question">
+                <div class="container test-question__container test-question__container_task-cont">
+                    <ul>
+                        <li>Как</li>
+                        <li>сделать</li>
+                        <li>маркерованный</li>
+                        <li>список?</li>
+                    </ul>
+                </div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button"><h2><</h2><h3>ul</h3><h2>></h2><h2><</h2><h3>unit</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>ol</h3><h2>></h2><h2><</h2><h3>li</h3><h2>></h2></div>
+                    <div class="right add-hover button"><h2><</h2><h3>ul</h3><h2>></h2><h2><</h2><h3>li</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>ol</h3><h2>></h2><h2><</h2><h3>unit</h3><h2>></h2></div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>    
+            <!-- !Вопрос 8 -->
+            <div class="test-question">
+                <div class="container test-question__container test-question__container_task-cont">
+                    <span>За что отвечает атрибут<h2>alt</h2>у тега img</span>
+                    
+                </div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">ЗА ВЫСОТУ КАРТИНКИ</div>
+                    <div class="wrong add-hover button">ЗА ШИРИНУ КАРТИНКИ</div>
+                    <div class="wrong add-hover button">ЗА URL КАРТИНКИ</div>
+                    <div class="right add-hover button">ЗА ТЕКСТ, ЗАМЕНЯЮЩИЙ КАРТИНКУ</div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 9 -->
+            <div class="test-question">
+                <div class="container test-question__container test-question__container_task-cont">
+                    <span>Как создать <h2><input type="radio" name="" id="">радио кнопку?</h2></span>
+                    
+                </div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button"><h2><</h2><h3>input type="check"</h3><h2>></h2></div>
+                    <div class="right add-hover button"><h2><</h2><h3>input type="radio"</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>radio</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>check</h3><h2>></h2></div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div> 
+            <!-- !Вопрос 10 -->
+            <div class="test-question">
+                <div class="container test-question__container test-question__container_task-cont">
+                   <input class="text" type="text" value="???">
+                </div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="right add-hover button"><h2><</h2><h3>input type="text"</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>input type="enter"</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>text</h3><h2>></h2></div>
+                    <div class="wrong add-hover button"><h2><</h2><h3>enter</h3><h2>></h2></div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>    
+            <!-- !Вопрос 11 -->
+            <div class="test-question">
+                <div class="container test-question__container test-question__container_task-cont">
+                   <div class="point"></div>
+                   <span style="margin-top: 30vh;">Переместите блок в центр контейнера</span>
+                </div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button"><h3>margin-right add-hover: 10vh;</h3></div>
+                    <div class="right add-hover button"><h3>margin-left: 10vh;</h3></div>
+                    <div class="wrong add-hover button"><h3>padding-left: 10vh;</h3></div>
+                    <div class="wrong add-hover button"><h3>border-left: 10vh;</h3></div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div> 
+            <!-- !Вопрос 12 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span>Переместите надпись "BLOCK" в центр блока</span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>padding: 100px 100px 100px 100px;</h4>
+                            
+                        </div> 
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>padding: 0 100px 0 100px;</h4>
+                        </div> 
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>padding: 0 100px 100px 100px;</h4>
+                        </div>
+                    </div>
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>padding: 100px 0 0 100px;</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>   
+            <!-- !Вопрос 13 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span class="css row">Сделайте надпись "BLOCK" <h2 class="css"><i>курсивом</i></h2></span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>font-style: bolder;}</h4>
+                        </div> 
+                    </h4></div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>font-size: italic;}</h4>
+                        </div> 
+                    </div>
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>font-style: italic;}</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>font-width: italic;}</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 14 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span class="css row">Сделайте надпись "BLOCK" <h2 class="css"><u> подчёркнутой</u></h2></span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>font-style: underline;}</h4>
+                        </div> 
+                    </h4></div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>font-size: underline;}</h4>
+                        </div> 
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>font-style: upperline;}</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>text-decoration: underline;}</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 15 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span class="css row">Сделайте надпись "BLOCK" <h2 style="text-decoration: line-through;" class="css">зачёркнутой</h2></span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>font-style: line;}</h4>
+                        </div> 
+                    </h4></div>
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>text-decoration: line-through;}</h4>
+                        </div> 
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>font-style: upperline;}</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>font-style: line-through;}</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 16 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span class="css row">Добавьте блоку <h2 style="border: 1px solid gold;" class="css">рамку</h2></span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border: 5px solid gold;}</h4>
+                        </div> 
+                    </h4></div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>margin: 5px solid gold;}</h4>
+                        </div> 
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border: 5px inline gold;}</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border: 5px dotted gold;}</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 17 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span class="css row">Теперь сделайте <h2 style="border: 1px dashed gold;" class="css">рамку пунктирной</h2></span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border: 5px ridge gold;}</h4>
+                        </div> 
+                    </h4></div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border: 5px solid gold;}</h4>
+                        </div> 
+                    </div>
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border: 5px dashed gold;}</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border: 5px dotted gold;}</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 18 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span class="row">Теперь сделайте <h2 style="border: 1px dotted gold;" class="css">рамку из точек</h2></span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border: 5px ridge gold;}</h4>
+                        </div> 
+                    </h4></div>
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border: 5px dotted gold;}</h4>
+                        </div> 
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border: 5px dashed gold;}</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border: 5px groove gold;}</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 19 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span style="border: 1px solid gold; border-radius: 20px;" class="css row">Закруглите <h2 class="css">края рамки</h2></span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border-incline: 20px;}</h4>
+                        </div> 
+                    </h4></div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border-circle: 20px;}</h4>
+                        </div> 
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border-delay: 20px;}</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border-radius: 20px;}</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 20 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span style="border: 1px solid gold; border-radius: 20px; border-top-left-radius: 0px; border-bottom-right-radius: 0px; font-size: auto;" class="css row">Теперь верните левый верхний и правый нижний углы в первоначальное положение</span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>border-bottom-right-radius: 0px;</h4>
+                                <h4>border-top-left-radius: 0px;</h4>
+                            <h5>}</h5>
+                        </div> 
+                    </h4></div>
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                            <h4>border-top-left-radius: 0px;</h4>
+                            <h4>border-bottom-right-radius: 0px;</h4>
+                            <h5>}</h5>
+                        </div> 
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>border-bottom-right-radius: 0px;</h4>
+                                <h4>border-top-right-radius: 0px;</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>border-bottom-left-radius: 0px;</h4>
+                                <h4>border-top-right-radius: 0px;</h4>
+                            <h5>}</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 21 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span class="css row">Передвиньте<h2 class="css" style="transform: translateY(-1vh);">блок повыше</h2></span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: translateX(-1vh)</h4>   
+                            <h5>}</h5>
+                        </div> 
+                    </h4></div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: translateX(1vh)</h4>
+                            <h5>}</h5>
+                        </div> 
+                    </div>
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: translateY(-1vh)</h4>
+                            <h5>}</h5>    
+                            
+                        </div>
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: translateY(1vh)</h4>
+                                
+                            <h5>}</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 22 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span class="css row">Поверните <h2 class="css">блок</h2></span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: rotate(45&#176;)</h4>   
+                            <h5>}</h5>
+                        </div> 
+                    </h4></div>
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: rotate(45deg;)</h4>
+                            <h5>}</h5>
+                        </div> 
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: scale(45&#176;)</h4>
+                            <h5>}</h5>    
+                            
+                        </div>
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: rotate(45vh)</h4>
+                                
+                            <h5>}</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 23 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span class="css row">Теперь выровняйте <h2 class="css">надпись "BLOCK"</h2></span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block span{</h5>
+                                <h4>transform: rotate(-45deg)</h4>   
+                            <h5>}</h5>
+                        </div> 
+                    </h4></div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: rotate(-45deg;)</h4>
+                            <h5>}</h5>
+                        </div> 
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block span{</h5>
+                                <h4>transform: rotate(45deg)</h4>
+                            <h5>}</h5>    
+                            
+                        </div>
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: scale(45vh)</h4>
+                                
+                            <h5>}</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 24 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span class="css row">Увеличьте<h2 style="transform: scale(1.5); margin-left: 3vw;" class="css">блок</h2></span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: scale(1,5)</h4>   
+                            <h5>}</h5>
+                        </div> 
+                    </h4></div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: rotate(1.5)</h4>
+                            <h5>}</h5>
+                        </div> 
+                    </div>
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: scale(1.5)</h4>
+                            <h5>}</h5>    
+                            
+                        </div>
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: scale(1.5vh)</h4>
+                                
+                            <h5>}</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div> 
+            </div>
+            <!-- !Вопрос 25 -->
+            <div class="test-question big">
+                <div class="container test-question__container test-question__container_task-cont"><span class="css row">Уменьшите<h2 style="transform: scale(0.5); margin-left: 3vw;" class="css">блок</h2></span></div>
+
+                <div class="container test-question__container test-question__container_answer-cont">
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: scale(1,8)</h4>   
+                            <h5>}</h5>
+                        </div> 
+                    </h4></div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: rotate(1.8)</h4>
+                            <h5>}</h5>
+                        </div> 
+                    </div>
+                    <div class="wrong add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: rotate(0.8)</h4>
+                            <h5>}</h5>    
+                            
+                        </div>
+                    </div>
+                    <div class="right add-hover button">
+                        <div class="css-text">
+                            <h5>.block{</h5>
+                                <h4>transform: scale(0.8)</h4>
+                                
+                            <h5>}</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container test-question__container test-question__container_next-button-cont">
+                    <div class="test-question__answer-button">ОТВЕТИТЬ</div>
+                    <div class="test-question__next-button">ДАЛЕЕ</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="test__demo"><span>BLOCK</span></div>             
+        <div class="end-screen">
+            <div class="end-screen__info-container">
+                <h2>ТЕСТ ЗАВЕРШЁН</h2>
+                <span class="end-screen__points">0</span>
+                <div class="end-screen__star-container">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star-fill six"></i>
+                    
+                </div>
+            </div>    
+            <div class="end-screen__button">ПРОЙТИ ЕЩЁ РАЗ</div>
+        </div> 
+    </div> <!--*/TEST-->
+    <div class="test-progress">
+        <div class="test-progress__question-answered">z</div>
+        /
+        <div class="test-progress__question-length">n</div>
+        
+    </div>
+    <div class="end-window"><!-- !POPUP -->
+        <div class="end-window__anchor">
+            <div class="end-window__content">
+                <span>Вы уверенны, что хотите завершить тест?</span>
+                <div class="end-window__button"><span>ЗАВЕРШИТЬ</span></div>
+            </div>
+        </div>
+    </div>
+    
+      
+   
+   
+   <!-- ?СКРИПТЫ -->
+   
+   <script src="js/script.js"></script>
+   
+   <!-- ?/СКРИПТЫ -->
+   
+</body>
+</html>
