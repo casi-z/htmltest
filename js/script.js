@@ -273,7 +273,7 @@ function getTimer(hours, minutes, seconds) { //!ТАЙМЕР
 			
 		}, 500);
 	})
-}getTimer(0, 30, 0)
+}getTimer(0, 20, 0)
 
 
 function showEndWindow() { //!Диалоговое окно
