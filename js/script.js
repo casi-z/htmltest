@@ -29,20 +29,21 @@ progressBar.style.width = "0px"
 	
 function getMobileVersion() {//!Адаптив
 	window.addEventListener("resize", function(e) {
-		
-		if(window.innerWidth < 767) {
-			if (window.innerWidth < window.innerHeight) {
-				body.classList.add("_adaptive")
-				d.querySelectorAll('.button').forEach(e => e.classList.remove('add-hover'));
+		function getAdaptive(params) {
+			if(window.innerWidth < 767) {
+				if (window.innerWidth < window.innerHeight) {
+					body.classList.add("_adaptive")
+					d.querySelectorAll('.button').forEach(e => e.classList.remove('add-hover'));
+				}else{
+					body.classList.remove("_adaptive")
+					d.querySelectorAll('.button').forEach(e => e.classList.add('add-hover'));
+				}
+				
 			}else{
 				body.classList.remove("_adaptive")
 				d.querySelectorAll('.button').forEach(e => e.classList.add('add-hover'));
 			}
-			
-		}else{
-			body.classList.remove("_adaptive")
-			d.querySelectorAll('.button').forEach(e => e.classList.add('add-hover'));
-		}
+		}getAdaptive
 	})
 	
 }getMobileVersion()
@@ -273,7 +274,7 @@ function getTimer(hours, minutes, seconds) { //!ТАЙМЕР
 			
 		}, 500);
 	})
-}getTimer(0, 20, 0)
+}getTimer(0, 30, 0)
 
 
 function showEndWindow() { //!Диалоговое окно
@@ -410,6 +411,13 @@ function getTestProgressInfo(params) {
 
 function themeChange() { //!Кнопка смены темы
 	let lightTheme = d.querySelector(".header__theme-button");
+	let time = new Date()
+	let hours = time.getHours()
+	if(hours < 8){ body.classList.toggle("_light")
+		
+	}
+	
+
 	lightTheme.addEventListener("click", function() {
 		body.classList.toggle("_light") //добавляет/удаляет класс
 		
@@ -428,15 +436,7 @@ let inputFix = () => d.querySelectorAll('input').forEach(e => e.setAttribute('ta
 
 function getDevMode() { //!Режим разработчика
 	pointsCounter.addEventListener("dblclick", function() {
-		// ql = ql * tr
-		// testBody.style.transform = `translateY(${ql}vh)`
-		// demo.style.display = "block"
-		// tr = ql
-		// num = (ql - 1)
-		// big()
 		test.style.overflowY = 'scroll'
-		
-		
 	})
 }getDevMode() //TODO: Закоментарить при тесте
 
@@ -449,6 +449,7 @@ function getTheQuestion() {//!Вопросы
 		let wrong = question[num].getElementsByClassName("wrong");
 		let right = question[num].getElementsByClassName("right");
 		let answerButton = question[num].querySelectorAll(".test-question__answer-button");
+		let buttonContainer = question[num].querySelector(".test-question__container_next-button-cont");
 		// num - номер вопроса видимого на экране
 		// ql - количество всех вопросов
         getButtonMixer()
@@ -493,13 +494,15 @@ function getTheQuestion() {//!Вопросы
 			button[3].addEventListener("click", function() {
 				getButtons(3)
 			})
-			answerButton[0].addEventListener('click', function() {
-				if(answerButton[0].classList.contains("_active")) {
-					if(!answerButton[0].classList.contains("_invisible")) {
-						doQuestionAnswered = true;
-						answerButton[0].classList.add('_invisible')
-						answerClick()
-						getCssCube()
+			buttonContainer.addEventListener('click', function(e) {
+				if (e.target == answerButton[0]) {
+					if(answerButton[0].classList.contains("_active")) {
+						if(!answerButton[0].classList.contains("_invisible")) {
+							doQuestionAnswered = true;
+							answerButton[0].classList.add('_invisible')
+							answerClick()
+							getCssCube()
+						}
 					}
 				}
 			})
@@ -689,23 +692,25 @@ function getTheQuestion() {//!Вопросы
 	}		
     
 }getTheQuestion()
-nextButton.forEach(e => e.addEventListener("click", function() { //!Кнопка "далее"
-	if(nextButton[num].classList.contains('_active')) {
-		if(nextButton[num].classList.contains("_end")) { //Завершает тест, если кнопка находится на последнем вопросе
-			showEndScreen()
-		} else {
-			nextButton[num].classList.remove('_active') //Кнопка исчезает
-			num++ //Меняется номер
-			testBody.style.transitionDuration = '2s'
-			testBody.style.transform = `translateY(${tr}vh)` //Перелистывается слайд
-			setTimeout(() => {
-				testBody.style.transitionDuration = '0s'
-			}, 2100);
-			doQuestionAnswered = false;
-			tr = tr - 80;
-			d.querySelector('title').innerHTML = `Тест по HTML. Вопрос ${(num + 1)}`
-			getTheQuestion() //Функция с ответами вызывается
-			getTestProgressInfo()
+d.querySelectorAll('.test-question__container_next-button-cont').forEach(e => e.addEventListener("click", function(e) { //!Кнопка "далее"
+	if(e.target == nextButton[num]){
+		if(nextButton[num].classList.contains('_active')) {
+			if(nextButton[num].classList.contains("_end")) { //Завершает тест, если кнопка находится на последнем вопросе
+				showEndScreen()
+			} else {
+				nextButton[num].classList.remove('_active') //Кнопка исчезает
+				num++ //Меняется номер
+				testBody.style.transitionDuration = '2s'
+				testBody.style.transform = `translateY(${tr}vh)` //Перелистывается слайд
+				setTimeout(() => {
+					testBody.style.transitionDuration = '0s'
+				}, 2100);
+				doQuestionAnswered = false;
+				tr = tr - 80;
+				d.querySelector('title').innerHTML = `Тест по HTML. Вопрос ${(num + 1)}`
+				getTheQuestion() //Функция с ответами вызывается
+				getTestProgressInfo()
+			}
 		}
 	}
 }))
