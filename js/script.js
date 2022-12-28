@@ -15,7 +15,6 @@ let matt = d.querySelector(".end-window");
 let endWindow = d.querySelector(".end-window__content");
 let endWindowButton = endWindow.querySelector(".end-window__button");
 let endScreen = d.querySelector(".end-screen");
-console.log(getComputedStyle(endScreen))
 //!___________________________________________________________________
 
 let ended = false;
